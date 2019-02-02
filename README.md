@@ -6,8 +6,9 @@ url-params is specifically build for multi page app approach, because in single 
 # Usage
 
 ## Installation
+```
 npm install @elifent/url-params
-
+```
 ## In an html file
 
 ```
@@ -76,5 +77,23 @@ In this case if your url is path/to/page?data=a&to=b&parse=c then you will be ab
 
 ## Contributing
 
+Running demo locally
+
+### Installation
+
+```
+  git clone https://github.com/elifent/url-params
+  cd url-params
+  npm install
+  npm install -g polymer-cli
+```
+
+### Running the demo locally
+
+```
+  polymer serve --npm
+  open http://127.0.0.1:<port>/demo/index.html?name=George&age=30&sex=male
+
+```
 Please make a branch and make change. <br>
 Found issues? Let me know

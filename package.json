@@ -1,6 +1,6 @@
 {
   "name": "@elifent/url-params",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "description": "Get params from url. A non-binding element",
   "main": "url-params.js",
   "scripts": {
@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/elifent/url-params/issues"
   },
-  "homepage": "https://github.com/elifent/url-params#readme"
+  "homepage": "https://github.com/elifent/url-params#readme",
+  "dependencies": {
+    "@polymer/polymer": "^3.0.0"
+  }
 }

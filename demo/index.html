@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>url-params-demo</title>
+    <meta name="description" content="webapp of tutoring academy">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="/manifest.json">
+    <script src="https://unpkg.com/@webcomponents/webcomponentsjs@^2.0.0/webcomponents-loader.js"></script>
+</head>
+
+<body unresolved>
+
+    <dom-module id="url-params-demo">
+        <template>
+
+            If you are following polymer demo then your app will be running at http://127.0.0.1:8081<br />
+            now try the demo at http://127.0.0.1:8081/demo/index.html?name=George&age=30&sex=male<br /><br />
+
+            <url-params pattern="?" data="{{params}}"></url-params>
+
+            Your name is {{params.name}}<br />
+            And you are {{params.age}} years old<br />
+            You are a {{params.sex}}<br />
+
+        </template>
+
+        <script type="module">
+            import '@polymer/polymer/polymer-legacy.js';
+            import {Polymer} from '@polymer/polymer/lib/legacy/polymer-fn.js';
+
+            import '../url-params.js'
+
+            Polymer({
+                is: 'url-params-demo',
+                /**
+                  * Object describing property-related metadata used by Polymer features
+                  */
+                properties: {
+                    params:{
+                            type: Object,
+                            value: null,
+                            notify: true
+                        }
+                }
+            });
+        </script>
+    </dom-module>
+
+    <url-params-demo></url-params-demo>
+
+</body>
+
+</html>
