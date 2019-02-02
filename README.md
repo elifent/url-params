@@ -95,5 +95,5 @@ Running demo locally
   open http://127.0.0.1:<port>/demo/index.html?name=George&age=30&sex=male
 
 ```
-Please make a branch and make change. <br>
+
 Found issues? Let me know
